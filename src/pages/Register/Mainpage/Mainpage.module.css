@@ -1,0 +1,123 @@
+.mainpage {
+  text-align: center;
+  background-color: #16191e;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.register {
+  min-height: 70vh;
+  min-width: 40vw;
+  border: 4px double yellow;
+  background-color: #222832;
+  color: white;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon {
+  height: 150px;
+  border-radius: 5%;
+  margin: 20px;
+  clip-path: polygon(
+    50% 0%,
+    70% 31%,
+    99% 41%,
+    76% 63%,
+    81% 99%,
+    49% 78%,
+    18% 99%,
+    26% 66%,
+    2% 41%,
+    34% 33%
+  );
+}
+
+a {
+  color: yellow;
+}
+
+.btn {
+  background: yellow;
+  box-shadow: inset 9px 9px 25px #f7c861ec;
+  border: 0;
+  font-weight: bold;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 14px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+.btn:hover {
+  box-shadow: inset 9px 9px 25px #f7c861ec;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 518px) {
+  .p {
+    margin: 40px;
+  }
+  a {
+    margin: 20px;
+  }
+  .btn {
+    margin: 20px;
+  }
+}
+
+@media only screen and (min-width: 519px) and (max-width: 966px) {
+  .p {
+    margin: 10px 30%;
+  }
+  a {
+    margin: 20px;
+  }
+  .btn {
+    margin: 20px;
+  }
+}
+
+@media only screen and (min-width: 967px) and (max-width: 1360px) {
+  a {
+    margin: 20px;
+  }
+  .btn {
+    margin: 20px;
+  }
+}
+
+@media only screen and (min-width: 967px) and (max-width: 1280px) {
+  .p {
+    width: 20vw;
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1281px) {
+  .p {
+    margin: 10px 30%;
+  }
+  a {
+    margin: 20px;
+  }
+  .btn {
+    margin: 20px;
+  }
+}
+@media (max-width: 400px) {
+  a {
+    margin: 20px;
+  }
+  .btn {
+    margin: 20px;
+  }
+}

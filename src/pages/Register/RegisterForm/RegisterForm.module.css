@@ -1,0 +1,119 @@
+.mainForm {
+  min-height: 70vh;
+  max-width: 60vw;
+  border: 4px double yellow;
+  background-color: #222832;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+}
+.join {
+  margin: 4rem 0 40px 0;
+  align-self: flex-start;
+}
+.logo {
+  height: 130px;
+  width: 130px;
+  padding: 10px;
+  background-color: #16191e;
+  align-self: flex-start;
+  border-radius: 10px;
+  margin-left: -25px;
+}
+.btn {
+  background: yellow;
+  box-shadow: inset 9px 9px 25px #f7c861ec;
+  border: 0;
+  font-weight: bold;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 14px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+.btn:hover {
+  box-shadow: inset 9px 9px 25px #f7c861ec;
+}
+
+.inputField {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+  margin-left: 80px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+input {
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  width: 220px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.checkBox {
+  width: 20px !important;
+}
+
+.checkField {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.Agreement {
+  text-align: start;
+}
+
+@media (max-width: 868px) {
+  .join {
+    margin: 50px 0 0 0;
+    align-self: center;
+  }
+  .container {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .inputField {
+    grid-template-columns: auto;
+    margin-left: -10px;
+  }
+
+  .logo {
+    align-self: center !important;
+    margin: 0 0 30px 0 !important;
+  }
+  .logoContainer {
+    float: right;
+  }
+
+  .mainForm {
+    max-width: 100%;
+  }
+
+  input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mainForm {
+    max-width: 70vw;
+  }
+}
