@@ -38,11 +38,6 @@ fieldset.MuiOutlinedInput-notchedOutline {
   border: 1px solid rgb(97, 97, 97) !important;
   border-radius: 4px;
 }
-.chip {
-  background-color: yellow !important;
-  color: black !important;
-  margin-top: 3px !important;
-}
 
 .highlightOption {
   background-color: transparent !important;

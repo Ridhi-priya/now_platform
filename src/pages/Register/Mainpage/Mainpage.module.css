@@ -3,44 +3,32 @@
   background-color: #16191e;
   min-height: 100vh;
   display: flex;
+  color: white;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
 }
 .register {
   min-height: 70vh;
-  min-width: 40vw;
+  max-width: 60vw;
   border: 4px double yellow;
   background-color: #222832;
-  color: white;
   border-radius: 2%;
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 .icon {
   height: 150px;
   border-radius: 5%;
   margin: 20px;
-  clip-path: polygon(
-    50% 0%,
-    70% 31%,
-    99% 41%,
-    76% 63%,
-    81% 99%,
-    49% 78%,
-    18% 99%,
-    26% 66%,
-    2% 41%,
-    34% 33%
-  );
+  width: 150px;
+  border: 4px solid yellow;
 }
-
-a {
-  color: yellow;
+.btns {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
 }
-
 .btn {
   background: yellow;
   box-shadow: inset 9px 9px 25px #f7c861ec;
@@ -64,10 +52,7 @@ a {
 }
 
 @media only screen and (min-width: 400px) and (max-width: 518px) {
-  .p {
-    margin: 40px;
-  }
-  a {
+  .a {
     margin: 20px;
   }
   .btn {
@@ -76,10 +61,7 @@ a {
 }
 
 @media only screen and (min-width: 519px) and (max-width: 966px) {
-  .p {
-    margin: 10px 30%;
-  }
-  a {
+  .a {
     margin: 20px;
   }
   .btn {
@@ -88,7 +70,7 @@ a {
 }
 
 @media only screen and (min-width: 967px) and (max-width: 1360px) {
-  a {
+  .a {
     margin: 20px;
   }
   .btn {
@@ -97,16 +79,9 @@ a {
 }
 
 @media only screen and (min-width: 967px) and (max-width: 1280px) {
-  .p {
-    width: 20vw;
-    font-size: 1.1rem;
-  }
 }
 @media (min-width: 1281px) {
-  .p {
-    margin: 10px 30%;
-  }
-  a {
+  .a {
     margin: 20px;
   }
   .btn {
@@ -114,7 +89,7 @@ a {
   }
 }
 @media (max-width: 400px) {
-  a {
+  .a {
     margin: 20px;
   }
   .btn {

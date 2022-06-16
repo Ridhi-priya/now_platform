@@ -1,5 +1,6 @@
-import { React, useState } from 'react'
+import { React, useContext, useState } from 'react'
 import logo from '../../assets/logo.png'
+import { AccountContext } from '../../context/AccountProvider'
 import Logout from '../RightSection/Logout/Logout'
 import './Sidemenu.css'
 
@@ -7,6 +8,7 @@ const SideMenue = () => {
   const [inactive, setInactive] = useState(false)
   const [ordershow, setOrdershow] = useState(false)
   const [promoshow, setPromoshow] = useState(false)
+  const { setUser } = useContext(AccountContext)
 
   return (
     <div className={`side-menu ${inactive ? 'inactive' : ''}`}>
@@ -286,7 +288,7 @@ const SideMenue = () => {
             </a>
             <div className='divider'></div>
             <li>
-              <a href='#'>
+              <a href='/login' onClick={() => setUser(false)}>
                 <Logout />
               </a>
             </li>

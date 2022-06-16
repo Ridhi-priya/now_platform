@@ -16,18 +16,18 @@ function App() {
     <div>
       <Router>
         <Switch>
-          <Route exact path='/'>
-            {user ? <Home /> : <Registerbtn />}
-          </Route>
-          <Route path='/register'>
-            <RegisterForm />
-          </Route>
-          <Route path='/login'>
-            <Login />
-          </Route>
-          <Route path='/registerbtn'>
-            <Registerbtn />
-          </Route>
+          {user ? (
+            <Route path='/'>
+              <Home />
+            </Route>
+          ) : (
+            <Route exact path='/'>
+              <Registerbtn />
+            </Route>
+          )}
+          <Route path='/register'>{user ? <Home /> : <RegisterForm />}</Route>
+          <Route path='/login'>{user ? <Home /> : <Login />}</Route>
+          <Route path='/registerbtn'>{user ? <Home /> : <Registerbtn />}</Route>
         </Switch>
       </Router>
     </div>
