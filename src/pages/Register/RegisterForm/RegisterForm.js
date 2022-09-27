@@ -4,18 +4,58 @@ function RegisterForm() {
   return (
     <div className={Styles.maindiv}>
       <div className={Styles.mainForm}>
-        <h2 className={Styles.join}>Join Our Now Community</h2>
+        <h2 className={Styles.join}> </h2>
         <div className={Styles.container}>
           <img className={Styles.logo} src='icon.png' alt='now' />
           <div className={Styles.inputField}>
-            <input type='text' placeholder='First Name' required />
-            <input type='text' placeholder='Last Name' required />
-            <input type='text' placeholder='Username' required />
-            <input type='email' placeholder='Email' required />
-            <input type='date' placeholder='Date Of Birth' required />
-            <input type='number' placeholder='Phone No' required />
-            <input type='number' placeholder='Alternet Phone No' />
-            <input type='password' placeholder='Password' required />
+            <input
+              className={Styles.input}
+              type='text'
+              placeholder='First Name'
+              required
+            />
+            <input
+              className={Styles.input}
+              type='text'
+              placeholder='Last Name'
+              required
+            />
+            <input
+              className={Styles.input}
+              type='text'
+              placeholder='Username'
+              required
+            />
+            <input
+              className={Styles.input}
+              type='email'
+              placeholder='Email'
+              required
+            />
+            {/* <input className={Styles.input} type='date' placeholder='Date Of Birth' required /> */}
+            <input
+              className={Styles.input}
+              type='text'
+              onFocus={(e) => (e.currentTarget.type = 'date')}
+              placeholder='Date of Birth'
+            />
+            <input
+              className={Styles.input}
+              type='number'
+              placeholder='Phone No'
+              required
+            />
+            <input
+              className={Styles.input}
+              type='number'
+              placeholder='Alternet Phone No'
+            />
+            <input
+              className={Styles.input}
+              type='password'
+              placeholder='Password'
+              required
+            />
           </div>
         </div>
         <div className={Styles.checkField}>
@@ -32,7 +72,9 @@ function RegisterForm() {
         </div>
 
         <button className={Styles.btn}>Create Account</button>
-        <a href='/Login'>ALREADY HAVE AN ACCOUNT</a>
+        <a className={Styles.a} href='/Login'>
+          ALREADY HAVE AN ACCOUNT
+        </a>
       </div>
     </div>
   )

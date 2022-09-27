@@ -20,12 +20,12 @@
   color: white;
 }
 .join {
-  margin: 4rem 0 40px 0;
+  margin: 2rem 0 40px 0;
   align-self: flex-start;
 }
 .logo {
-  height: 130px;
-  width: 130px;
+  height: 200px;
+  width: 200px;
   background-color: #16191e;
   align-self: flex-start;
   border-radius: 10px;
@@ -42,6 +42,7 @@
   padding: 14px 40px;
   font-size: 16px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 .btn:active {
   transform: scale(0.98);
@@ -66,11 +67,11 @@
   align-items: center;
   justify-content: space-between;
 }
-input {
+.input {
   border: none;
   border-radius: 5px;
-  /* background-color: white !important; */
-  /* padding: 7px; */
+  background-color: white !important;
+  padding: 7px;
   width: 220px;
 }
 
@@ -80,6 +81,7 @@ input:focus {
 
 .checkBox {
   width: 20px !important;
+  margin-right: 1rem;
 }
 
 .checkField {
@@ -93,41 +95,6 @@ input:focus {
   text-align: start;
   font-size: 0.9rem;
 }
-
-@media (max-width: 868px) {
-  .join {
-    margin: 50px 0 0 0;
-    align-self: center;
-  }
-  .container {
-    flex-direction: column;
-    margin: 20px 0;
-  }
-
-  .inputField {
-    grid-template-columns: auto;
-    margin-left: -10px;
-  }
-
-  .logo {
-    align-self: center !important;
-    margin: 0 0 30px 0 !important;
-  }
-  .logoContainer {
-    float: right;
-  }
-
-  .mainForm {
-    max-width: 100%;
-  }
-
-  input {
-    width: 300px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .mainForm {
-    max-width: 70vw;
-  }
+.a {
+  margin-bottom: 10px;
 }

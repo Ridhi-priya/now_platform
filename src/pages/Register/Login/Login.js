@@ -17,8 +17,8 @@ function Login() {
   return (
     <div className={Styles.login}>
       <div className={Styles.container}>
-        <h1>Please login</h1>
-        <form onSubmit={handleSubmit}>
+        {/* <h1>Please login</h1> */}
+        <form className={Styles.form} onSubmit={handleSubmit}>
           <div className={Styles.formControl}>
             <input
               className={Styles.label}
