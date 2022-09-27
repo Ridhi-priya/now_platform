@@ -10,8 +10,6 @@ import { useContext } from 'react'
 
 function App() {
   const { user } = useContext(AccountContext)
-  console.log(user)
-  // const user = 'false'
   return (
     <div>
       <Router>
