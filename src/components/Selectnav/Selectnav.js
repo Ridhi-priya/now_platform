@@ -50,6 +50,7 @@ function Selectnav() {
             <MenuItem value={3}>Roma electronics</MenuItem>
             <MenuItem value={4}>SVM electronics</MenuItem>
             <MenuItem value={5}>RR electronics</MenuItem>
+            <MenuItem value={6}>Amit electronics</MenuItem>
           </Select>
         </FormControl>
       </div>
